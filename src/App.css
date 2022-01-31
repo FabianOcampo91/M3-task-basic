@@ -1,20 +1,36 @@
-.App {
+.container {
+  display: block;
   text-align: center;
+  border-style: groove;
+  border-color: #282c34;
+  border-radius: 20px;
+  border-width: 15px;
+  padding: 75px;
+  /* text-align: center; */
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.separador{
+  height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  font-size: 20px;
+  height: 40px;
+  border-radius: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
+
+button{
+  border-radius: 12px;
+  background-image: linear-gradient(225deg, #f56400 0, #ee530d 12.5%, #e4411b 25%, #d72d22 37.5%, #c71226 50%, #b60028 62.5%, #a6002a 75%, #97002c 87.5%, #89002e 100%);
+  color: #eb7ba0;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.App-task {
+  background-image: radial-gradient(circle at 12.5% 12.5%, #c071d0 0, #ac66cf 16.67%, #965bcd 33.33%, #7a50cc 50%, #5747cb 66.67%, #1741ca 83.33%, #003cc9 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +38,19 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  /* text-align: center; */
+  border-radius: 10px;
+  background-color: aqua;
+  color: #282c34;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 40px;
+  font-size: 30px;
 }
